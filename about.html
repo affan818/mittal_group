@@ -63,14 +63,18 @@
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center py-2 me-2">
-                    <a class="text-body px-2" href="">Terms</a>
-                    <a class="text-body px-2" href="">Privacy</a>
+                    <a class="text-body px-2" href="./terms.html">Terms</a>
+                    <a class="text-body px-2" href="./PrivacyPolicy.html">Privacy</a>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1"
+                        href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <a class="btn btn-sm-square btn-outline-body me-0"
+                        href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -94,12 +98,12 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="./about.html" class="nav-item nav-link active">About us</a>
                 <a href="./project.html" class="nav-item nav-link">Our Projects</a>
-                <a href="#" class="nav-item nav-link">Blogs</a>
+                <a href="./blogs.html" class="nav-item nav-link">Blogs</a>
 
-                <a href="#" class="nav-item nav-link">Carrer</a>
+                <a href="./career.html" class="nav-item nav-link">Carreer</a>
 
 
-                <a href="#" class="nav-item nav-link">Contact Us</a>
+                <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
             <a href="#" class="btn btn-dark py-2 px-4 d-none d-lg-block" data-bs-toggle="modal"
                 data-bs-target="#appointmentModal">
@@ -108,35 +112,53 @@
         </div>
     </nav>
 
+
     <!-- Modal -->
     <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+                    <h5 class="modal-title" id="appointmentModalLabel">Get in touch</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="appointmentForm">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <input type="text" class="form-control" id="name" name="user_name"
+                                placeholder="Enter your name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <input type="email" class="form-control" id="email" name="user_email"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="user_mobile"
+                                placeholder="Enter your phone number" required pattern="[0-9]{10}" maxlength="10"
+                                minlength="10">
+                            <small class="text-muted">Enter a valid 10-digit phone number.</small>
                         </div>
                         <div class="mb-3">
                             <label for="city" class="form-label">City</label>
-                            <input type="text" class="form-control" id="city" required>
+                            <input type="text" class="form-control" id="city" name="user_city"
+                                placeholder="Enter your city" required>
                         </div>
-                        <button type="submit" class="btn btn-dark w-100">Submit</button>
+                        <div class=" mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" class="form-control" id="country" name="user_country"
+                                placeholder="Enter your Country" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 mb-2">Submit</button>
+                        <div class="thankyou"></div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Navbar End -->
 
 
@@ -144,13 +166,6 @@
     <div class="container-fluid page-header img-fluid py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <h1 class="display-1 text-white animated slideInDown">About Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb text-uppercase mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
-                </ol>
-            </nav>
         </div>
     </div>
 
@@ -160,172 +175,161 @@
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid" src="img/about-1.jpg" alt="">
-                        <img class="img-fluid" src="img/about-2.jpg" alt="">
+            <div class="row pb-5">
+                <h1 class="display-5 mb-4 d-flex justify-content-center align-item-center border-bottom">The legacy that
+                    is The Mittal
+                    Group</h1>
+            </div>
+            <div class="row g-5 pb-5">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/murlidhar.jpg" alt="murlidhar-img"
+                                title="Founder and chairman">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Mr. Murlidhar Agrawal</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h4 class="section-title">About Us</h4>
-                    <h1 class="display-5 mb-4">A Creative Architecture Agency For Your Dream Home</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                        erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum
-                        amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.
-                    </p>
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-dark"
-                            style="width: 120px; height: 120px;">
-                            <h1 class="display-1 mb-n2" data-toggle="counter-up">25</h1>
-                        </div>
-                        <div class="ps-4">
-                            <h3>Years</h3>
-                            <h3>Working</h3>
-                            <h3 class="mb-0">Experience</h3>
-                        </div>
-                    </div>
-                    <a class="btn btn-dark py-3 px-5" href="">Read More</a>
+                <div class=" col-lg-8 wow fadeIn" data-wow-delay="0.5s">
+                    <h2 class="text-dark">Founder and chairman</h2>
+                    <p>The journey of The Mittal Group began with the vision and determination of our
+                        founder, <b style="color: black;">Mr.
+                            Murlidhar Agrawal</b>. With an initial investment of just ₹50,000 in
+                        agricultural land, Mr.
+                        Agrawal
+                        laid the foundation of what would become a legacy. His instinctive knack for buying
+                        and selling
+                        land quickly became his second nature, which became an anchor for a remarkable story
+                        of growth
+                        and success. Over the years, Mr. Murlidhar Agrawal’s unwavering commitment
+                        established a solid
+                        foundation for the group, turning opportunities into achievements.</p>
+
+
+
                 </div>
             </div>
+            <div class="row g-5 pb-5">
+                <div class="col-lg-8 wow fadeIn" data-wow-delay="0.5s">
+                    <h2 class="text-dark">Managing Director</h2>
+                    <p>A new chapter unfolded when his 20-year-old son, Mr. Nitin Agrawal, brought fresh energy
+                        and
+                        vision into the business. Mr. Nitin Agrawal expanded the family’s horizons by venturing
+                        into
+                        coal trading, diversifying the group’s portfolio and opening doors to new opportunities.
+                        His
+                        leadership marked The Mittal Group’s entry into real estate in 2008 with the
+                        construction of 42
+                        row houses, a milestone project that set the stage for future success. This was soon
+                        followed by
+                        the launch of the Skyline Project, further solidifying the group’s reputation in the
+                        real estate
+                        sector.</p>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/banti.jpg" alt="banti-img" title="Managing Director">
+
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Mr. Nitin (Bunty) Agrawal</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- About End -->
 
 
     <!-- Feature Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h4 class="section-title">Why Choose Us!</h4>
-                    <h1 class="display-5 mb-4">Why You Should Trust Us? Learn More About Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                    <h1 class="display-5 mb-4">What Makes Us an Industry Leader?</h1>
+                    <p class="mb-4">At Mittal Group Builders & Developers, we create landmarks, not just structures. Our
+                        years of excellence and unwavering commitment to quality, innovation, and customer satisfaction
+                        have positioned us as a pioneer in the real estate industry.
                     </p>
                     <div class="row g-4">
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <i class="fas fa-building fa-3x" style="color: black;"></i>
+                                <i class="bi bi-trophy text-dark" style="font-size: 5rem;"></i>
                                 <div class="ms-4">
-                                    <h3>Design Approach</h3>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                        diam stet diam sed stet.</p>
+                                    <h3>Unmatched Expertise</h3>
+                                    <p class="mb-0">Our team of architects, designers, and engineers brings world-class
+                                        skills and industry-leading knowledge to every project, ensuring that each home
+                                        or commercial space exceeds expectations.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <!-- <img class="flex-shrink-0" src="img/icons/icon-3.png" alt="Icon"> -->
-                                <i class="fas fa-lightbulb fa-3x" style="color: black;"></i>
+                                <i class="bi bi-palette text-dark" style="font-size: 5rem;"></i>
                                 <div class="ms-4">
-                                    <h3>Innovative Solutions</h3>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                        diam stet diam sed stet.</p>
+                                    <h3>Ingenious Designs</h3>
+                                    <p class="mb-0">We blend modern aesthetics with functionality, offering cutting-edge
+                                        designs that stand the test of time and cater to diverse lifestyles.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <!-- <img class="flex-shrink-0" src="img/icons/icon-4.png" alt="Icon"> -->
-                                <i class="fas fa-chart-line fa-3x" style="color: black;"></i>
+                                <i class="bi bi-star text-dark" style="font-size: 5rem;"></i>
                                 <div class="ms-4">
-                                    <h3>Project Management</h3>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                        diam stet diam sed stet.</p>
+                                    <h3>Quality Without Compromise</h3>
+                                    <p class="mb-0">From premium materials to state-of-the-art construction practices,
+                                        we never compromise on quality, delivering excellent homes and properties.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-cloud-sun text-dark" style="font-size: 5rem;"></i>
+
+                                <div class="ms-4">
+                                    <h3>Sustainability</h3>
+                                    <p class="mb-0">We are passionate about creating eco-friendly, energy-efficient
+                                        buildings that benefit our customers and contribute to a greener, more
+                                        sustainable world.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-people text-dark" style="font-size: 5rem;"></i>
+
+                                <div class="ms-4">
+                                    <h3>Customer-Centric Approach</h3>
+                                    <p class="mb-0"> At Mittal Group, we value our customers above all. Every project is
+                                        crafted with attention to detail, ensuring we deliver buildings and a place to
+                                        call home!
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="feature-img">
-                        <img class="img-fluid" src="img/about-2.jpg" alt="">
-                        <img class="img-fluid" src="img/about-1.jpg" alt="">
-                    </div>
+                <div class="col-lg-6 wow fadeInUp custom-background" data-wow-delay="0.5s">
+
+                    <img class="img-fluid" width="1080" src="img/atlantis-3.jpg" alt="">
+
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Feature End -->
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h4 class="section-title">Team Members</h4>
-                <h1 class="display-5 mb-4">We Are Creative Architecture Team For Your Dream Home</h1>
-            </div>
-            <div class="row g-0 team-items">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Co founder</h3>
-                            <span class="text-dark">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Engineer</h3>
-                            <span class="text-dark">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Founder</h3>
-                            <span class="text-dark">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Director</h3>
-                            <span class="text-dark">Designation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
+
 
 
     <!-- Footer Start -->
@@ -334,37 +338,38 @@
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
                     <h3 class="mb-4" style="color: #b8ccd9;">Address</h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="color: #b8ccd9;"></i>222, EAST WARDHAMAN
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="color: #b8ccd9;"></i>222, EAST
+                        WARDHAMAN
                         NAGAR
                         BEHIND STATE BANK OF INDIA NAGPUR, NAGPUR, Nagpur, Maharashtra, 440008</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: #b8ccd9;"></i>+00000000000</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3" style="color: #b8ccd9;"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: #b8ccd9;"></i><a
+                            class="white-underline" href="tel:918421699901" style="color:#b8ccd9;">+91
+                            8421699901</a>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3" style="color: #b8ccd9;"></i><a
+                            class="white-underline" style="color:#b8ccd9 ;"
+                            href="mailto:info@example.com">info@example.com</a></p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
+
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                <h3 class="text-light mb-4">Services</h3>
-                <a class="btn btn-link" href="">Architecture</a>
-                <a class="btn btn-link" href="">3D Animation</a>
-                <a class="btn btn-link" href="">House Planning</a>
-                <a class="btn btn-link" href="">Interior Design</a>
-                <a class="btn btn-link" href="">Construction</a>
-            </div> -->
                 <div class="col-lg-4 col-md-6">
                     <h3 class="mb-4" style="color: #b8ccd9;">Quick Links</h3>
                     <a class="btn btn-link" href="./about.html">About Us</a>
                     <a class="btn btn-link" href="./project.html">Our Projects</a>
-                    <a class="btn btn-link" href="">Blogs</a>
-                    <a class="btn btn-link" href="">Career</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="./blogs.html">Blogs</a>
+                    <!-- <a class="btn btn-link" href="./career.html">Career</a> -->
+                    <a class="btn btn-link" href="./contact.html">Contact Us</a>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h3 class="mb-4" style="color: #b8ccd9;">Our Location</h3>
-                    <p>Visit us at our convenient location in Nagpur.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px; height: 200px;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5863148506465!2d79.11721707505785!3d21.156462086386915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c70d555bb111%3A0x92d2d55d951ee312!2s222%2C%20Transport%20Nagar%2C%20East%20Wardhaman%20Nagar%2C%20Nagpur%2C%20Maharashtra%20440008!5e0!3m2!1sen!2sin!4v1695395273035!5m2!1sen!2sin"
@@ -379,7 +384,9 @@
             <div class="container">
                 <div class="row">
                     <div class="text-center mb-3 mb-md-0">
-                        &copy; <a href="#">Mittal Group</a>, All Right Reserved.
+                        &copy; <a href="#" class="white-underline" style="color: #b8ccd9;">Mittal Group,</a> All
+                        Right
+                        Reserved.
                     </div>
 
                 </div>
@@ -407,6 +414,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="email.js"></script>
+    <script src="confirmation.js"></script>
 </body>
 
 </html>

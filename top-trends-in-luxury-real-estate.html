@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mittal Group Our project</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icons/icon-1.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Q3oB5wz8kKJ7Zz/vvRAZjrcs59VhGLpP/8r6XZtl5CL4fyZLTdaGyz2N9CUGvWHT" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .recentblog {
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            gap: 0.3rem;
+        }
+
+        .custom-image {
+            max-height: 400px;
+            /* Optional: Set a max height */
+            width: 100%;
+            /* Ensure it adjusts to the container's width */
+            object-fit: cover;
+            /* Ensures the image maintains its aspect ratio */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-black" style="width: 6rem; height: 6rem;" role="status">
+        </div>
+        <img class="position-absolute top-50 start-50 translate-middle" width="50" src="img/icons/icon-1.png"
+            alt="Icon">
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-2 me-3">
+                    <a class="text-body text-white px-2" href="tel:+919923833322"><i
+                            class="fa fa-phone-alt text-white me-2"></i> <span class="text-white">
+                            +91 8421699901
+                        </span></a>
+                    <a class="text-body px-2" href="mailto:info@example.com"><i
+                            class="fa fa-envelope-open text-white me-2"></i><span
+                            class="text-white">info@gmail.com.com</span></a>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-2 me-2">
+                    <a class="text-body px-2" href="./terms.html">Terms</a>
+                    <a class="text-body px-2" href="./PrivacyPolicy.html">Privacy</a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square btn-outline-body me-1"
+                        href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <a class="btn btn-sm-square btn-outline-body me-0"
+                        href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav style="background-color: rgb(222, 220, 220);"
+        class="navbar navbar-expand-lg navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="m-0" style="color: black;">
+                <img class="me-3" src="img/icons/icon-1.png" width="50" alt="Icon">Mittal Group
+            </h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="./about.html" class="nav-item nav-link">About us</a>
+                <a href="./project.html" class="nav-item nav-link active">Our Projects</a>
+                <a href="./blogs.html" class="nav-item nav-link">Blogs</a>
+                <a href="./career.html" class="nav-item nav-link">Career</a>
+                <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <a href="#" class="btn btn-dark py-2 px-4 d-none d-lg-block" data-bs-toggle="modal"
+                data-bs-target="#appointmentModal">
+                Get in touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Get in touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="user_name"
+                                placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="user_email"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label><br>
+                            <input type="tel" class="form-control" id="phone" name="user_mobile"
+                                placeholder="phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" name="user_city"
+                                placeholder="Enter your city" required>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" class="form-control" id="country" name="user_country"
+                                placeholder="Enter your Country" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 mb-2">Submit</button>
+                        <div class="thankyou"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-1 text-white animated slideInDown">Top Trends in Luxury Real Estate for 2025</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Blog Start -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <h2>Sustainability and Eco-friendly Features</h2>
+
+                <p style="text-align: justify;">Sustainability and eco-friendly features are increasingly becoming
+                    central to
+                    luxury real estate in
+                    2025, as both buyers and developers are embracing environmental responsibility.</p>
+                <img src="./img/blog-img/eco-friendly.jpg" class="img-fluid custom-image"
+                    style="height: 400px; width:850px;" alt="eco-friendly">
+                <ul>
+                    <li style="text-align: justify;">
+                        Construction: Luxury homes are incorporating sustainable materials such as recycled steel,
+                        reclaimed wood, and non-toxic paint. These materials not only reduce environmental impact but
+                        also offer unique aesthetic appeal.
+                    </li>
+                    <li style="text-align: justify;">
+                        Energy Efficiency:Homeowners have become more conscious of their environmental impact,
+                        integrating energy-saving technologies such as solar panels, energy-efficient HVAC systems, and
+                        LED lighting not only help reduce energy bills but also contribute to a more sustainable,
+                        eco-friendly lifestyle.
+                    </li>
+                </ul>
+                <h2 style="text-align: justify;">Smart Homes and Technology Integration
+                </h2>
+
+                <p style="text-align: justify;">Smart homes and technology integration have become indispensable
+                    features in
+                    luxury real estate,
+                    transforming properties into highly functional and personalized living spaces.</p>
+                <img src="./img/blog-img/luxurious.jpg" class="img-fluid custom-image"
+                    style="height: 400px; width:850px;" alt="luxurious-smart-home">
+                <ul>
+                    <li style="text-align: justify;">
+                        Automation Systems: These properties allow homeowners to control various aspects of their homes
+                        seamlessly. These systems can manage lighting, heating, cooling, security, and entertainment,
+                        creating a fully integrated experience.
+                    </li>
+                    <li style="text-align: justify;">
+                        Security systems: High-end properties feature advanced security measures, such as biometric
+                        entry systems, facial recognition cameras, and 24/7 remote monitoring. These systems allow
+                        homeowners to monitor and control security from anywhere in the world using their smartphones.
+                    </li>
+                </ul>
+
+                <h2 style="text-align: justify;">Wellness-focused Amenities
+                </h2>
+
+
+
+                <p style="text-align: justify;">In 2025, the concept of wellness has extended beyond spas and gyms to
+                    encompass
+                    an entire lifestyle,
+                    deeply integrated into the design and functionality of high-end properties.
+                </p>
+                <img src="./img/blog-img/cycling-track.jpg" class="img-fluid custom-image"
+                    style="height: 400px; width:850px;" alt="cycling-track">
+
+                <ul>
+                    <li style="text-align: justify;">
+                        Fitness and Wellness Facilities: Dedicated spaces for fitness and wellness activities, allow
+                        homeowners to maintain their health without stepping outside. For relaxation and recovery, homes
+                        feature saunas, steam rooms, and jacuzzis, creating spa-like experiences within the comfort of
+                        one’s
+                        residence.
+                    </li>
+                    <li style="text-align: justify;">
+                        Outdoor spaces: Outdoor spaces like landscaped gardens, infinity pools, and outdoor yoga decks
+                        offer homeowners opportunities to unwind. Some homes even feature walking trails, zen gardens,
+                        or rooftop terraces with a panoramic view to connect with nature
+
+                    </li>
+                </ul>
+
+                <h2 style="text-align: justify;">Multifunctional Spaces</h2>
+                <p style="text-align: justify;">Multifunctional spaces have become a hallmark of luxury homes,
+                    reflecting the evolving lifestyle and
+                    professional demands of modern homeowners.</p>
+                <ul>
+                    <li style="text-align: justify;">
+                        Dedicated Home Offices: The work-from-home trend has made dedicated home offices an essential
+                        feature in every home. These offices are designed to inspire productivity while offering privacy
+                        and comfort.
+                    </li>
+                    <li style="text-align: justify;">
+                        Flexible Spaces: Luxury homes are increasingly incorporating multipurpose rooms that can adapt
+                        to a variety of uses. These rooms are designed with modular furniture, such as foldaway beds,
+                        convertible desks, and storage solutions, to make transitions effortless.
+                    </li>
+                </ul>
+                <h2 style="text-align: justify;">Exclusive Locations</h2>
+                <p>Exclusive locations are one of the most defining aspects of luxury real estate, as affluent buyers
+                    prioritize properties that offer not only privacy but also breathtaking settings and unparalleled
+                    convenience.</p>
+                <ul>
+                    <li style="text-align: justify;">
+                        Spectacular Views and Natural Beauty: Luxury buyers are increasingly drawn to properties
+                        situated in locations that provide stunning natural vistas. Mountain retreats and homes
+                        overlooking scenic countryside are in high demand. These locations offer a sense of serenity,
+                        escape, and connection with nature, making them highly desirable.
+                    </li>
+                    <li style="text-align: justify;">
+                        Proximity to Cultural and Lifestyle Amenities: Many luxury buyers also seek locations that offer
+                        proximity to cultural and lifestyle amenities. Homes near vibrant cultural hubs with renowned
+                        museums, theaters, and art galleries provide homeowners with easy access to enriching
+                        experiences.
+                    </li>
+                </ul>
+                <h2 style="text-align: justify;">
+                    Minimalism and Clean Designs
+                </h2>
+                <p style="text-align: justify;">
+                    This design philosophy emphasizes "less is more," focusing on creating serene and harmonious living
+                    spaces that promote peace of mind while maintaining a sophisticated aesthetic.
+                </p>
+                <ul>
+                    <li style="text-align: justify;">
+                        Clean Lines and Uncluttered Spaces: Minimalist luxury homes are defined by their clean
+                        architectural lines and uncluttered interiors. Built-in storage solutions help maintain a
+                        clutter-free environment by keeping everyday items out of sight, while sleek, streamlined
+                        furniture pieces add to the overall sense of order and refinement.
+                    </li>
+                    <li style="text-align: justify;">
+                        Neutral Color Schemes: Neutral color palettes are a cornerstone of minimalist design. Shades of
+                        white, beige, gray, and earthy tones dominate, creating a timeless and versatile backdrop that
+                        enhances the feeling of serenity.
+                    </li>
+                </ul>
+                <h2 style="text-align: justify;">Cultural and Artistic Integration</h2>
+                <p>This approach transforms homes into more than just living spaces, they become curated experiences
+                    that blend functional luxury with aesthetic significance.</p>
+                <ul>
+                    <li style="text-align: justify;">
+                        Architectural Elements: Incorporating cultural and historical influences into architectural
+                        design is another hallmark of this trend. These elements bring a sense of global sophistication
+                        and uniqueness to the home, making it feel both personal and timeless.
+
+                    </li>
+                    <li style="text-align: justify;">
+                        A Reflection of Individuality: Ultimately, the integration of cultural and artistic elements in
+                        luxury homes reflects the homeowner’s identity, values, and passions. It moves beyond
+                        traditional notions of luxury by adding a layer of personality and storytelling.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="recentblog">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h2>Recent Blogs</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 d-flex justify-content-center align-items-center"><a href="#">
+                                <img class="p-2" src="./img/blog-img/top-trend 70X70.jpg" alt="">
+                            </a></div>
+                        <div class="col-lg-9 d-flex justify-content-left align-items-center">
+                            <p><a href="#" class="decoration-none text-dark">Top Trends in Luxury Real Estate for
+                                    2025</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Conclusion</h2>
+            <p style="text-align: justify;">The luxury real estate market in 2025 is redefining opulence by blending
+                technology, sustainability, and
+                wellness to meet the evolving demands of affluent buyers. From energy-efficient features like solar
+                panels and smart home automation to wellness-focused </p>
+        </div>
+    </div>
+
+
+
+    <!-- Blog End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4" style="color: #b8ccd9;">Address</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="color: #b8ccd9;"></i>222, EAST WARDHAMAN
+                        NAGAR
+                        BEHIND STATE BANK OF INDIA NAGPUR, NAGPUR, Nagpur, Maharashtra, 440008</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: #b8ccd9;"></i><a
+                            class="white-underline" href="tel:918421699901" style="color:#b8ccd9;">+91 8421699901</a>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3" style="color: #b8ccd9;"></i><a
+                            class="white-underline" style="color:#b8ccd9 ;"
+                            href="mailto:info@example.com">info@example.com</a></p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Services</h3>
+                    <a class="btn btn-link" href="">Architecture</a>
+                    <a class="btn btn-link" href="">3D Animation</a>
+                    <a class="btn btn-link" href="">House Planning</a>
+                    <a class="btn btn-link" href="">Interior Design</a>
+                    <a class="btn btn-link" href="">Construction</a>
+                </div> -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4" style="color: #b8ccd9;">Quick Links</h3>
+                    <a class="btn btn-link" href="./about.html">About Us</a>
+                    <a class="btn btn-link" href="./project.html">Our Projects</a>
+                    <a class="btn btn-link" href="./blogs.html">Blogs</a>
+                    <a class="btn btn-link" href="./career.html">Career</a>
+                    <a class="btn btn-link" href="./contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4" style="color: #b8ccd9;">Our Location</h3>
+                    <div class="position-relative mx-auto" style="max-width: 400px; height: 200px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5863148506465!2d79.11721707505785!3d21.156462086386915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c70d555bb111%3A0x92d2d55d951ee312!2s222%2C%20Transport%20Nagar%2C%20East%20Wardhaman%20Nagar%2C%20Nagpur%2C%20Maharashtra%20440008!5e0!3m2!1sen!2sin!4v1695395273035!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center mb-3 mb-md-0">
+                        &copy; <a href="#" class="white-underline" style="color: #b8ccd9;">Mittal Group,</a> All Right
+                        Reserved.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-dark btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="email.js"></script>
+    <script src="confirmation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFw5zcE5eDYIhtbh4g8F3mxZDTHEe53bAHeqCMFYCuUMS4VHi5F3oEg9HI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

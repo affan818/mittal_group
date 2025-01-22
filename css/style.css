@@ -7,6 +7,18 @@
 body {
   background-color: rgb(222, 220, 220);
 }
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 h1,
 h2,
 .h1,
@@ -266,7 +278,7 @@ h6,
 }
 
 .fact-item .fact-icon i {
-  color: var(--primary);
+  color: var(--dark);
   transition: 0.5;
 }
 
@@ -547,4 +559,70 @@ h6,
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+}
+
+/* Link or text style */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Initial underline setup */
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--dark);
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.animated-underline:hover {
+  color: var(--dark);
+}
+
+.animated-underline:hover::after {
+  width: 100%; /* Expand the underline */
+}
+
+.white-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #b8ccd9;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Initial underline setup */
+.white-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #b8ccd9;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.white-underline:hover {
+  color: #b8ccd9;
+}
+
+.white-underline:hover::after {
+  width: 100%; /* Expand the underline */
+}
+
+ol.g {
+  list-style-type: decimal-leading-zero;
 }
