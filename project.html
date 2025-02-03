@@ -18,6 +18,17 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap"
         rel="stylesheet">
 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -32,6 +43,46 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <style>
+        * {
+            font-family: "Zilla Slab", "serif"
+        }
+
+        .hero-section {
+            position: relative;
+            background: url('./img/previous-project/previous-project.png') center/cover no-repeat;
+            height: 60vh;
+            /* Adjusted height */
+            display: flex;
+            align-items: center;
+            /* Center vertically */
+            justify-content: flex-start;
+            /* Align text to the left */
+            color: white;
+            text-align: left;
+            /* Align text to the left */
+            padding: 50px;
+            /* Add padding for spacing */
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* Dark overlay */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 50%;
+            /* Optional: Limit text width */
+        }
+    </style>
 </head>
 
 <body>
@@ -53,9 +104,9 @@
                 <div class="h-100 d-inline-flex align-items-center py-2 me-3">
                     <a class="text-body text-white px-2" href="tel:+919923833322"><i
                             class="fa fa-phone-alt text-white me-2"></i> <span class="text-white">
-                            +91 8421699901
+                            +91 9923833322
                         </span></a>
-                    <a class="text-body px-2" href="mailto:info@example.com"><i
+                    <a class="text-body px-2" href="mailto:enquiry.atlantisbymittalgroup@gmail.com"><i
                             class="fa fa-envelope-open text-white me-2"></i><span
                             class="text-white">info@gmail.com.com</span></a>
                 </div>
@@ -85,7 +136,7 @@
     <nav style="background-color: rgb(222, 220, 220);"
         class="navbar navbar-expand-lg navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="m-0" style="color: black;">
+            <h1 class="m-0" style="color: black; font-family: Zilla Slab, serif">
                 <img class="me-3" src="img/icons/icon-1.png" width="50" alt="Icon">Mittal Group
             </h1>
         </a>
@@ -98,7 +149,7 @@
                 <a href="./about.html" class="nav-item nav-link">About us</a>
                 <a href="./project.html" class="nav-item nav-link active">Our Projects</a>
                 <a href="./blogs.html" class="nav-item nav-link">Blogs</a>
-                <a href="./career.html" class="nav-item nav-link">Career</a>
+                <!--<a href="./career.html" class="nav-item nav-link">Career</a>-->
                 <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
             <a href="#" class="btn btn-dark py-2 px-4 d-none d-lg-block" data-bs-toggle="modal"
@@ -114,7 +165,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="appointmentModalLabel">Get in touch</h5>
+                    <h5 class="modal-title" id="appointmentModalLabel" style="font-family: Zilla Slab, serif">Get in
+                        touch</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -156,50 +208,301 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <h1 class="display-1 text-white animated slideInDown">Projects</h1>
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-5 fw-bold text-white" style="font-family: Zilla Slab, serif;">Project</h1>
         </div>
-    </div>
-    <!-- Page Header End -->
+    </section>
 
+    <!-- Page Header End -->
 
     <!-- Project Start -->
     <div class="container-xxl project py-5">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="mb-4">Mittal Group Builders & Developers Building Trust, One Landmark at a Time!</h1>
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 600px;">
+                <h1 class="mb-4" style="font-family: Zilla Slab, serif">Mittal Group Builders & Developers Building
+                    Trust, One Landmark at a Time!</h1>
             </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-lg-12">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-lg-6 col-md-12" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-5.png"
-                                            style="object-fit: cover; width: 1080px; height: 1080px;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12">
-                                    <h1 class="mb-3">Atlantis by the Mittal Group : Roman inspired project</h1>
-                                    <p class="mb-4">With our exceptional blend of expertise, innovation, and commitment,
-                                        we continue to redefine the real estate landscape, creating spaces that inspire,
-                                        elevate, and last.</p>
-                                    <p><i class="fa fa-check text-dark me-3"></i>Nagpur's Finest Luxury Apartments</p>
-                                    <p><i class="fa fa-check text-dark me-3"></i>3 & 4 BED Sky Living Spaces</p>
-                                    <p><i class="fa fa-check text-dark me-3"></i>Tallest building of the city</p>
-                                    <a href="https://atlantisbymittalgroup.com/"
-                                        class="btn btn-dark py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
+
+            <!-- Projects -->
+            <div class="row g-4 wow fadeInUp pb-5" data-wow-delay="0.5s">
+                <!-- Project 1 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid w-100 h-100 rounded" src="img/atlantis-3.jpg"
+                            style="object-fit: cover; cursor: pointer;" alt="Atlantis" data-bs-toggle="modal"
+                            data-bs-target="#modal1">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="mb-3" style="font-family: Zilla Slab, serif">Atlantis by the Mittal Group : Roman
+                        Inspired Project</h1>
+                    <p class="mb-4">With our exceptional blend of expertise, innovation, and commitment, we continue to
+                        redefine the real estate landscape, creating spaces that inspire, elevate, and last.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Nagpur's Finest Luxury Apartments</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>3 & 4 BED Sky Living Spaces</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Tallest building of the city</p>
+                    <a href="https://atlantisbymittalgroup.com/" class="btn btn-dark py-3 px-5 mt-3">Read More</a>
+                    <br>
+                    <a href="brouchers/Atlantis-Brochure.pdf">
+                        <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
+                            Brochure</button>
+                    </a>
+                </div>
+
+                <!-- Modal for Project 1 -->
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content position-relative">
+                            <img src="img/atlantis-3.jpg" class="img-fluid rounded" alt="Atlantis">
+                            <button type="button"
+                                class="btn-close position-absolute top-0 end-0 m-4 bg-white rounded-circle p-2 shadow"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Repeat for Other Projects -->
+            <div class="row g-4 wow fadeInUp pb-5" data-wow-delay="0.5s">
+                <!-- Project 2 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid w-100 h-100 rounded" src="img/previous-project/lotus.jpg"
+                            style="object-fit: cover; cursor: pointer;" alt="Lotus" data-bs-toggle="modal"
+                            data-bs-target="#modal2">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="mb-3" style="font-family: Zilla Slab, serif">Lotus: A Tranquil Haven in the Heart of the
+                        City</h1>
+                    <p class="mb-4">Lotus offers a serene living experience with its lush green surroundings and modern
+                        amenities. Perfectly designed for families, it balances tranquility and connectivity, ensuring a
+                        peaceful yet vibrant lifestyle.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Premium 2 & 3 BHK apartments with spacious layouts</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Landscaped gardens and walking trails</p>
+
+                    <a href="brouchers/lotus.pdf">
+                        <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
+                            Brochure</button>
+                    </a>
+                </div>
+
+                <!-- Modal for Project 2 -->
+                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content position-relative">
+                            <img src="img/previous-project/lotus.jpg" class="img-fluid rounded" alt="Lotus Image">
+                            <button type="button"
+                                class="btn-close position-absolute top-0 end-0 m-4 bg-white rounded-circle p-2 shadow"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="row g-4 wow fadeInUp pb-5" data-wow-delay="0.5s">
+                <div class="col-lg-6 col-md-12">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid w-100 h-100 rounded" src="img/previous-project/tulip.jpg"
+                            style="object-fit: cover; cursor: pointer;" alt="Tulip" data-bs-toggle="modal"
+                            data-bs-target="#modal3">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="mb-3" style="font-family: Zilla Slab, serif">Tulip: Affordable Elegance for Modern Living
+                    </h1>
+                    <p class="mb-4">Tulip redefines affordable housing by offering stylish and functional homes at
+                        competitive prices. It is an ideal choice for young professionals and families looking for
+                        quality living spaces without compromising on comfort.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Compact and thoughtfully designed 1 & 2 BHK apartments
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Energy-efficient designs with natural ventilation</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Community spaces, including a gym and party hall</p>
+
+                    <a href="brouchers/tulip.pdf">
+                        <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
+                            Brochure</button>
+                    </a>
+                </div>
+
+                <!-- Modal for Project 3 -->
+                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content position-relative">
+                            <img src="img/previous-project/tulip.jpg" class="img-fluid rounded" alt="Tulip">
+                            <button type="button"
+                                class="btn-close position-absolute top-0 end-0 m-4 bg-white rounded-circle p-2 shadow"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="row g-4 wow fadeInUp pb-5" data-wow-delay="0.5s">
+                <div class="col-lg-6 col-md-12">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid w-100 h-100 rounded" src="img/previous-project/orchid.jpg"
+                            style="object-fit: cover; cursor: pointer;" alt="orchid" data-bs-toggle="modal"
+                            data-bs-target="#modal4">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="mb-3" style="font-family: Zilla Slab, serif">
+                        Orchid
+                        : Exclusive Living with Premium Comfort & Vastu Compliance
+                    </h1>
+                    <p class="mb-4">Orchid Project offers a perfect blend of modern architecture and superior
+                        craftsmanship. Designed for exclusivity, each floor features a single apartment with excellent
+                        ventilation and natural light. With high-end specifications and Vastu compliance, it ensures a
+                        peaceful and luxurious living experience.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Earthquake-resistant RCC frame structure for enhanced
+                        safety
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>1 apartment per floor, ensuring privacy and openness
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Italian-finish vitrified tiles for a premium flooring
+                        experience
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Rainwater harvesting system for sustainable water
+                        management
+
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Video-door phone security for all apartments
+                    </p>
+
+                    <a href="brouchers/orchid.pdf">
+                        <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
+                            Brochure</button>
+                    </a>
+                </div>
+
+                <!-- Modal for Project 4 -->
+                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content position-relative">
+                            <img src="img/previous-project/orchid.jpg" class="img-fluid rounded" alt="Tulip">
+                            <button type="button"
+                                class="btn-close position-absolute top-0 end-0 m-4 bg-white rounded-circle p-2 shadow"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- project 5  -->
+            <div class="row g-4 wow fadeInUp pb-5" data-wow-delay="0.5s">
+                <div class="col-lg-6 col-md-12">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid w-100 h-100 rounded" src="img/previous-project/mittal-enclave.jpg"
+                            style="object-fit: cover; cursor: pointer;" alt="orchid" data-bs-toggle="modal"
+                            data-bs-target="#modal5">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="mb-3" style="font-family: Zilla Slab, serif">
+                        Mittal Enclave
+                        : Affordable Comfort with Timeless Design & Durability
+                    </h1>
+                    <p class="mb-4">Mittal Enclave stands as a symbol of classic design and enduring quality. The RCC
+                        frame structure combined with teak wood doors and windows ensures a strong foundation and a
+                        luxurious feel. With well-defined spaces and modern amenities, this project offers unmatched
+                        value and comfort for its residents.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>RCC frame structure with Redbricks work for durability
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Teak wood door frames and decorative front doors for a
+                        premium look
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Granite top kitchen with glazed tiled dado and
+                        stainless steel sink
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>European or Orissa pans with white washbasins in all
+                        toilets
+
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Utility water from Boring and drinking water from the
+                        corporation
+                    </p>
+
+                    <a href="brouchers/mittal-enclave.pdf">
+                        <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
+                            Brochure</button>
+                    </a>
+                </div>
+
+                <!-- Modal for Project 5 -->
+                <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content position-relative">
+                            <img src="img/previous-project/mittal-enclave.jpg" class="img-fluid rounded" alt="Tulip">
+                            <button type="button"
+                                class="btn-close position-absolute top-0 end-0 m-4 bg-white rounded-circle p-2 shadow"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project 6  -->
+            <div class="row g-4 wow fadeInUp pb-5" data-wow-delay="0.5s">
+                <div class="col-lg-6 col-md-12">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid w-100 h-100 rounded" src="#" style="object-fit: cover; cursor: pointer;"
+                            alt="Skyline" data-bs-toggle="modal" data-bs-target="#modal6">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="mb-3" style="font-family: Zilla Slab, serif">
+                        The Skyline Project
+                        : Elevate Your Lifestyle Amidst the Clouds
+                    </h1>
+                    <p class="mb-4">The Skyline Project in Nagpur offers panoramic views and unmatched luxury in every
+                        corner. Designed to enhance urban living, it combines cutting-edge architecture with premium
+                        amenities to create a one-of-a-kind residential experience.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>3 & 4 BHK apartments with floor-to-ceiling windows
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Rooftop amenities including a sky garden and infinity
+                        pool
+
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>High-tech gymnasium and wellness center
+
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Sustainable energy solutions and rainwater harvesting
+
+
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Utility water from Boring and drinking water from the
+                        corporation
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Located near key business and entertainment hubs
+                    </p>
+
+                    <a href="brouchers/skyline.pdf">
+                        <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
+                            Brochure</button>
+                    </a>
+                </div>
+
+                <!-- Modal for Project 5 -->
+                <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content position-relative">
+                            <img src="#" class="img-fluid rounded" alt="Hazrat molana abid khan sahab">
+                            <button type="button"
+                                class="btn-close position-absolute top-0 end-0 m-4 bg-white rounded-circle p-2 shadow"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Project End -->
+
+
 
 
 
@@ -208,45 +511,44 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4" style="color: #b8ccd9;">Address</h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="color: #b8ccd9;"></i>222, EAST WARDHAMAN
+                    <h3 class="mb-4" style="color: #ffffff; font-family: Zilla Slab, serif">Address</h3>
+                    <p style="color: #ffffff;" class="mb-2"><i class="fa fa-map-marker-alt me-3"
+                            style="color: #ffffff;"></i>222, EAST
+                        WARDHAMAN
                         NAGAR
                         BEHIND STATE BANK OF INDIA NAGPUR, NAGPUR, Nagpur, Maharashtra, 440008</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: #b8ccd9;"></i><a
-                            class="white-underline" href="tel:918421699901" style="color:#b8ccd9;">+91 8421699901</a>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: #ffffff;"></i><a
+                            class="white-underline" href="tel:918421699901" style="color:#ffffff;">+91
+                            8421699901</a>
                     </p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3" style="color: #b8ccd9;"></i><a
-                            class="white-underline" style="color:#b8ccd9 ;"
-                            href="mailto:info@example.com">info@example.com</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope  me-3" style="color: #ffffff;"></i><a
+                            class="white-underline" style="color: #ffffff; font-family: Zilla Slab, serif;"
+                            href="mailto:enquiry.atlantisbymittalgroup@gmail.com">enquiry.atlantisbymittalgroup@gmail.com</a>
+                    </p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
                                 class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-body me-1"
                             href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
+
                         <a class="btn btn-square btn-outline-body me-1"
                             href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
                                 class="fab fa-instagram"></i></a>
-
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Services</h3>
-                    <a class="btn btn-link" href="">Architecture</a>
-                    <a class="btn btn-link" href="">3D Animation</a>
-                    <a class="btn btn-link" href="">House Planning</a>
-                    <a class="btn btn-link" href="">Interior Design</a>
-                    <a class="btn btn-link" href="">Construction</a>
-                </div> -->
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4" style="color: #b8ccd9;">Quick Links</h3>
-                    <a class="btn btn-link" href="./about.html">About Us</a>
-                    <a class="btn btn-link" href="./project.html">Our Projects</a>
-                    <a class="btn btn-link" href="./blogs.html">Blogs</a>
-                    <a class="btn btn-link" href="./career.html">Career</a>
-                    <a class="btn btn-link" href="./contact.html">Contact Us</a>
+                    <h3 class="mb-4" style="color: #ffffff; font-family: Zilla Slab, serif;">Quick Links</h3>
+                    <a class="white-underline" href="./about.html">About Us</a>
+                    <br>
+                    <a class="white-underline" href="./project.html">Our Project</a>
+                    <br>
+                    <a class="white-underline" href="./blogs.html">Blogs</a>
+                    <br>
+                    <a class="white-underline" href="./contact.html">Contact</a>
+                    <br>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4" style="color: #b8ccd9;">Our Location</h3>
+                    <h3 class="mb-4" style="color: #ffffff; font-family: Zilla Slab, serif;">Our Location</h3>
                     <div class="position-relative mx-auto" style="max-width: 400px; height: 200px;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5863148506465!2d79.11721707505785!3d21.156462086386915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c70d555bb111%3A0x92d2d55d951ee312!2s222%2C%20Transport%20Nagar%2C%20East%20Wardhaman%20Nagar%2C%20Nagpur%2C%20Maharashtra%20440008!5e0!3m2!1sen!2sin!4v1695395273035!5m2!1sen!2sin"
@@ -260,8 +562,9 @@
         <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">
-                    <div class="text-center mb-3 mb-md-0">
-                        &copy; <a href="#" class="white-underline" style="color: #b8ccd9;">Mittal Group,</a> All Right
+                    <div class="text-center mb-3 mb-md-0" style="color: #ffffff;">
+                        &copy; <a href="#" class="white-underline" style="color: #ffffff;">Mittal Group</a> All
+                        Right
                         Reserved.
                     </div>
 

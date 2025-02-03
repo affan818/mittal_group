@@ -1,0 +1,21 @@
+/* Close Button Custom Styling */
+.modal-content .btn-close {
+  width: 40px; /* Larger close button */
+  height: 40px;
+  border: 2px solid #ccc; /* Border for better visibility */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Close Button */
+.modal-content .btn-close:hover {
+  background-color: #f8f9fa; /* Light gray hover effect */
+  transform: scale(1.1); /* Slight zoom on hover */
+  border-color: #000; /* Darker border on hover */
+}
+
+/* Modal Content Background (Optional) */
+.modal-content {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
