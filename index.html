@@ -43,7 +43,39 @@
         * {
             font-family: "Zilla Slab", "serif"
         }
+
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            scroll-snap-type: x mandatory;
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        .project-card {
+            flex: 0 0 auto;
+
+            scroll-snap-align: start;
+            border: none;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            height: 5px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #020202;
+            border-radius: 10px;
+        }
     </style>
+
 </head>
 
 <body style="background-color: white;">
@@ -65,12 +97,12 @@
                 <div class="h-100 d-inline-flex align-items-center py-2 me-3">
                     <a class="text-body text-white px-2" href="tel:+919923833322"><i
                             class="fa fa-phone-alt text-white me-2"></i> <span class="text-white">
-                            +91 9923833322
+                            +91 99238 33322
 
                         </span></a>
-                    <a class="text-body px-2" href="mailto:enquiry.atlantisbymittalgroup@gmail.com"><i
+                    <a class="text-body px-2" href="mailto:Info@themittalgroup.com"><i
                             class="fa fa-envelope-open text-white me-2"></i><span
-                            class="text-white">info@gmail.com.com</span></a>
+                            class="text-white">Info@themittalgroup.com</span></a>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -80,13 +112,12 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <a class="btn btn-sm-square btn-outline-body me-1"
-                        href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
-                            class="fab fa-twitter"></i></a>
+                        href="https://www.facebook.com/share/1EqzvRcSyB/?mibextid=wwXIfr"><i
+                            class="fab fa-facebook-f"></i></a>
+
 
                     <a class="btn btn-sm-square btn-outline-body me-0"
-                        href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                            class="fab fa-instagram"></i></a>
+                        href="https://www.instagram.com/themittalgroup/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -112,62 +143,16 @@
                 <a href="./project.html" class="nav-item nav-link">Our Projects</a>
                 <a href="./blogs.html" class="nav-item nav-link">Blogs</a>
                 <!--<a href="./career.html" class="nav-item nav-link">Career</a>-->
-
-
-                <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
+                <!-- <a href="./contact.html" class="nav-item nav-link">Contact Us</a> -->
             </div>
-            <a href="#" class="btn btn-dark py-2 px-4 d-none d-lg-block" data-bs-toggle="modal"
-                data-bs-target="#appointmentModal">
+            <a href="./contact.html" class="btn btn-dark py-2 px-4 ">
                 Get in touch
             </a>
         </div>
     </nav>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 style="font-family: Zilla Slab, serif;" class="modal-title" id="appointmentModalLabel">Get in
-                        touch</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="appointmentForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="user_name"
-                                placeholder="Enter your name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="user_email"
-                                placeholder="Enter your email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label><br>
-                            <input type="tel" class="form-control" id="phone" name="user_mobile"
-                                placeholder="phone number" required>
-                        </div>
-                        <div class=" mb-3">
-                            <label for="city" class="form-label">City</label>
-                            <input type="text" class="form-control" id="city" name="user_city"
-                                placeholder="Enter your city" required>
-                        </div>
-                        <div class=" mb-3">
-                            <label for="country" class="form-label">Country</label>
-                            <input type="text" class="form-control" id="country" name="user_country"
-                                placeholder="Enter your Country" required>
-                        </div>
-                        <button type="submit" class="btn btn-dark w-100 mb-2">Submit</button>
-                        <div class="thankyou"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- modal here  -->
 
 
     <!-- Navbar End -->
@@ -175,47 +160,49 @@
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/bannerImg-1.png'>">
-                <img class="img-fluid" src="img/bannerImg-1.png" alt="">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/coal-banner-home.jpg'>">
+                <img class="img-fluid" src="img/coal-banner-home.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h3 style="font-family: Zilla Slab, serif;"
-                                    class="display-1 text-white animated slideInDown">Shaping your dream spaces with
-                                    unmatched innovation and craftsmanship.</h3>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/bannerImg-2.png'>">
-                <img class="img-fluid" src="img/bannerImg-2.png" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h3 style="font-family: Zilla Slab, serif;"
-                                    class="display-1 text-white animated slideInDown">Turning visions into vibrant,
-                                    lasting landmarks with precision and creativity.
+                                <h3 style="font-family: Zilla Slab, serif; font-size: 3rem;"
+                                    class="display-1 text-white animated slideInDown">
+                                    Real Estate
+                                </h3>
+                                <h3 style="font-family: Zilla Slab, serif;font-size: 3rem"
+                                    class="display-1 text-white animated slideInDown">
+                                    Coal Trading
                                 </h3>
 
+                                <h3 style="font-family: Zilla Slab, serif;font-size: 3rem"
+                                    class="display-1 text-white animated slideInDown">
+                                    Finance And Investment
+                                </h3>
+                                <h3 style="font-family: Zilla Slab, serif;font-size: 3rem"
+                                    class="display-1 text-white animated slideInDown">
+                                    Transportation
+                                </h3>
+                                <h3 style="font-family: Zilla Slab, serif;font-size: 3rem"
+                                    class="display-1 text-white animated slideInDown">
+                                    Education
+                                </h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/bannerImg-3.png'>">
-                <img class="img-fluid" src="img/bannerImg-3.png" alt="">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/atlantis-banner.jpg'>">
+                <img class="img-fluid" src="img/atlantis-banner.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h3 style="font-family: Zilla Slab, serif;"
-                                    class="display-1 text-white animated slideInDown">Designing superior properties
-                                    where modern concept meets enduring elegance.
+                                <h3 style="font-family: Zilla Slab, serif;font-size: 3rem"
+                                    class="display-1 text-white animated slideInDown">Turning visions <br>into
+                                    vibrant,<br>
+                                    lasting landmarks with <br>
+                                    precision and creativity.
                                 </h3>
                             </div>
                         </div>
@@ -227,36 +214,7 @@
     <!-- Carousel End -->
 
 
-    <!-- Facts Start -->
-    <div class="container-xxl py-5">
-        <div class="container pt-5">
-            <div class="row g-4">
-                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                        <div class="fact-icon">
-                            <i class="bi bi-building" style="font-size: 4rem;"></i>
-                        </div>
-                        <h3 style="font-family: Zilla Slab, serif;" class="mb-3">Design Approach</h3>
-                        <p style="font-family: Zilla Slab, serif;" class="mb-0">Where creativity meets functionality,
-                            delivering designs that are as unique as
-                            they are purposeful.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                        <div class="fact-icon">
-                            <i class="bi bi-wrench" style="font-size: 4rem;"></i>
-                        </div>
-                        <h3 style="font-family: Zilla Slab, serif;" class="mb-3">Innovative Solutions</h3>
-                        <p style="font-family: Zilla Slab, serif;" class="mb-0"> Redefining possibilities with
-                            cutting-edge solutions tailored to your vision
-                            and needs.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Facts End -->
+
 
 
     <!-- About Start -->
@@ -265,28 +223,40 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img">
-                        <img class="img-fluid" src="img/previous-project/tulip.jpg" alt="">
-                        <img class="img-fluid" src="img/previous-project/1.jpg" alt="">
+                        <img class="img-fluid" src="img/coal-trading.jpg" alt="">
+                        <img class="img-fluid" src="img/realestate.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h4 style="font-family: Zilla Slab, serif;" class="section-title">About Us</h4>
                     <!-- <h1 class="display-5 mb-4">A Creative Architecture Agency For Your Dream Home</h1> -->
-                    <p style="font-family: Zilla Slab, serif;">At Mittal Group, we don’t just build homes. We build
-                        dreams. For over a quarter of a century, we
-                        have witnessed and participated in millions of stories, turning dreams into projects. Each cut
-                        we design is a vision of your dreams, harmoniously combining creativity and the classics.</p>
-                    <p style="font-family: Zilla Slab, serif;" class="mb-4">To us, your home isn’t just bricks and
-                        mortar but the Happenings, the Joy, and the
-                        Stories. Choose us, and let us transform your dream house into a cosy, passionate, and inspiring
-                        home. Building a house is easy.
+                    <p style="font-family: Zilla Slab, serif;">Since 2001, headed by Nitin Agrawal, the group has
+                        diversified businesses in Coal Trading, Transportation, Finance, Investment, and Education,
+                        delivering excellence and reliability for over two decades. Our commitment to quality,
+                        integrity, and customer satisfaction has positioned us as a preferred partner across industries.
+                    </p>
+                    <p style="font-family: Zilla Slab, serif;" class="mb-4">
+                        Under the visionary leadership of our director, Mr. Nitin Agrawal, we have expanded our
+                        expertise beyond coal trading to include real estate ventures, catering to the evolving needs of
+                        businesses and investors. While coal trading remains our core strength - providing high-quality,
+                        timely, and competitively priced fuel solutions - we have also made significant strides in real
+                        estate development, offering premium commercial and residential properties.
+
+                    </p>
+                    <p style="font-family: Zilla Slab, serif;" class="mb-4">At Mittal Group, we understand energy and
+                        infrastructure's critical role in economic growth. Our robust supply chain, deep industry
+                        expertise, and dedication to sustainable practices ensure that we continue creating lasting
+                        value. Our tailored financial solutions complement our services, helping businesses confidently
+                        navigate their investment needs.
                     </p>
 
-                    <p style="font-family: Zilla Slab, serif;" class="mb-4">Let us, therefore, construct something that
-                        will outlive us. </p>
-                    <p style="font-family: Zilla Slab, serif;" class="mb-4">Let us construct something together.</p>
+                    <p style="font-family: Zilla Slab, serif;" class="mb-4">Driven by trust, innovation, and a
+                        customer-first approach, Mittal Group remains committed to powering industries, building
+                        communities, and shaping a sustainable future.
 
-                    <a style="font-family: Zilla Slab, serif;" class="btn btn-dark py-3 px-5" href="./about.html">Read
+                    </p>
+
+                    <a style="font-family: Zilla Slab, serif;" class="btn btn-dark py-3 px-5" href="./about.html">Know
                         More</a>
                 </div>
             </div>
@@ -294,151 +264,10 @@
     </div>
     <!-- About End -->
 
-    <!-- Feature Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 style="font-family: Zilla Slab, serif;" class="section-title">Why Choose Us!</h4>
-                    <h1 style="font-family: Zilla Slab, serif;" class="display-5 mb-4">What Makes Us an Industry Leader?
-                    </h1>
-                    <p class="mb-4">At Mittal Group Builders & Developers, we create landmarks, not just structures. Our
-                        years of excellence and unwavering commitment to quality, innovation, and customer satisfaction
-                        have positioned us as a pioneer in the real estate industry.
-                    </p>
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div class="d-flex align-items-start">
-                                <i class="bi bi-trophy text-dark" style="font-size: 5rem;"></i>
-                                <div class="ms-4">
-                                    <h3 style="font-family: Zilla Slab, serif;">Unmatched Expertise</h3>
-                                    <p class="mb-0">Our team of architects, designers, and engineers brings world-class
-                                        skills and industry-leading knowledge to every project, ensuring that each home
-                                        or commercial space exceeds expectations.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex align-items-start">
-                                <i class="bi bi-palette text-dark" style="font-size: 5rem;"></i>
-                                <div class="ms-4">
-                                    <h3 style="font-family: Zilla Slab, serif;">Ingenious Designs</h3>
-                                    <p class="mb-0">We blend modern aesthetics with functionality, offering cutting-edge
-                                        designs that stand the test of time and cater to diverse lifestyles.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex align-items-start">
-                                <i class="bi bi-star text-dark" style="font-size: 5rem;"></i>
-                                <div class="ms-4">
-                                    <h3 style="font-family: Zilla Slab, serif;">Quality Without Compromise</h3>
-                                    <p class="mb-0">From premium materials to state-of-the-art construction practices,
-                                        we never compromise on quality, delivering excellent homes and properties.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex align-items-start">
-                                <i class="bi bi-cloud-sun text-dark" style="font-size: 5rem;"></i>
-
-                                <div class="ms-4">
-                                    <h3 style="font-family: Zilla Slab, serif;">Sustainability</h3>
-                                    <p class="mb-0">We are passionate about creating eco-friendly, energy-efficient
-                                        buildings that benefit our customers and contribute to a greener, more
-                                        sustainable world.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex align-items-start">
-                                <i class="bi bi-people text-dark" style="font-size: 5rem;"></i>
-
-                                <div class="ms-4">
-                                    <h3 style="font-family: Zilla Slab, serif;">Customer-Centric Approach</h3>
-                                    <p class="mb-0"> At Mittal Group, we value our customers above all. Every project is
-                                        crafted with attention to detail, ensuring we deliver buildings and a place to
-                                        call home!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp custom-background" data-wow-delay="0.5s">
-
-                    <img class="img-fluid" width="1080" src="img/atlantis-3.jpg" alt="">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Feature End -->
 
 
-    <!-- Project Start -->
-    <div class="container-xxl project py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <!-- <h4 class="section-title">Our Projects</h4> -->
-                <h1 style="font-family: Zilla Slab, serif;" class=" mb-4">Mittal Group Builders & Developers Building
-                    Trust, One Landmark at a Time!
-                </h1>
-            </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                <!-- <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h3 class="m-0">01. Modern Complex</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h3 class="m-0">02. Royal Hotel</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h3 class="m-0">03. Mexwel Buiding</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h3 class="m-0">04. Shopping Complex</h3>
-                        </button>
-                    </div>
-                </div> -->
-                <div class="col-lg-12">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-lg-6 col-md-12" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/atlantis-5.jpg"
-                                            style="object-fit: cover;" alt="Atlantis">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12">
-                                    <h1 style="font-family: Zilla Slab, serif;" class="mb-3">Atlantis by the Mittal
-                                        Group : Roman inspired project</h1>
-                                    <p class="mb-4">With our exceptional blend of expertise, innovation, and commitment,
-                                        we continue to redefine the real estate landscape, creating spaces that inspire,
-                                        elevate, and last.</p>
-                                    <p><i class="fa fa-check text-dark me-3"></i>Nagpur's Finest Luxury Apartments</p>
-                                    <p><i class="fa fa-check text-dark me-3"></i>3 & 4 BED Sky Living Spaces</p>
-                                    <p><i class="fa fa-check text-dark me-3"></i>Tallest building of the city</p>
-                                    <a href="https://atlantisbymittalgroup.com/"
-                                        class="btn btn-dark py-3 px-5 mt-3">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Project End -->
+
+
 
 
     <!-- Team Start -->
@@ -518,7 +347,80 @@
     </div> -->
     <!-- Team End -->
 
-
+    <div class="container mt-5">
+        <h2 class="text-center" style="font-family: Zilla Slab, serif;">Our Projects</h2>
+        <div class="scroll-container">
+            <div class="card project-card">
+                <a href="project.html">
+                    <img src="img/atlantis-scroll.jpg" alt="Project 1" style="font-family: Zilla Slab, serif;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Zilla Slab, serif;">Atlantis by the Mittal Group :
+                            Roman
+                            Inspired Project</h5>
+                        <!-- <p class="card-text">Description of project 1.</p> -->
+                    </div>
+                </a>
+            </div>
+            <div class="card project-card">
+                <a href="project.html">
+                    <img src="img/lotus-scroll.jpg" alt="Project 2" style="font-family: Zilla Slab, serif;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Zilla Slab, serif;">Lotus:A Tranquil Haven in the
+                            Heart
+                            of the
+                            City</h5>
+                        <!-- <p class="card-text">Description of project 2.</p> -->
+                    </div>
+                </a>
+            </div>
+            <div class="card project-card">
+                <a href="project.html">
+                    <img src="img/tulip-scroll.jpg" alt="Project 3" style="font-family: Zilla Slab, serif;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Zilla Slab, serif;">Tulip: Affordable Elegance for
+                            Modern
+                            Living</h5>
+                        <!-- <p class="card-text">Description of project 3.</p> -->
+                    </div>
+                </a>
+            </div>
+            <div class="card project-card">
+                <a href="project.html">
+                    <img src="img/Orchid-scroll.jpg" alt="Project 3"
+                        style="font-family: Zilla Slab, serif; height: 500px; width: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Zilla Slab, serif;">Orchid
+                            : Exclusive Living with Premium <br> Comfort & Vastu Compliance</h5>
+                        <!-- <p class="card-text">Description of project 3.</p> -->
+                    </div>
+                </a>
+            </div>
+            <div class="card project-card">
+                <a href="project.html"> <img src="img/skyline-scroll.png" alt="Project 3"
+                        style="font-family: Zilla Slab, serif; height: 500px; width: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Zilla Slab, serif;">The Skyline Project : Elevate
+                            Your
+                            Lifestyle <br> Amidst the Clouds</h5>
+                        <!-- <p class="card-text">Description of project 3.</p> -->
+                    </div>
+                </a>
+            </div>
+            <div class="card project-card">
+                <a href="project.html">
+                    <img src="img/enclave-scroll.jpg" alt="Project 3"
+                        style="font-family: Zilla Slab, serif; height: 500px; width: 500px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Zilla Slab, serif;">Mittal Enclave: Homes Full of
+                            Life,
+                            <br>Trust, Happiness & Values.
+                        </h5>
+                        <!-- <p class="card-text">Description of project 3.</p> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -613,24 +515,23 @@
                             style="color: #ffffff;"></i>222, EAST
                         WARDHAMAN
                         NAGAR
-                        BEHIND STATE BANK OF INDIA NAGPUR, NAGPUR, Nagpur, Maharashtra, 440008</p>
+                        BEHIND STATE BANK OF INDIA NAGPUR, Maharashtra, 440008</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: #ffffff;"></i><a
-                            class="white-underline" href="tel:918421699901" style="color:#ffffff;">+91
-                            8421699901</a>
+                            class="white-underline" href="tel:919923833322" style="color:#ffffff;">+91
+                            99238 33322</a>
                     </p>
                     <p class="mb-2"><i class="fa fa-envelope  me-3" style="color: #ffffff;"></i><a
                             class="white-underline" style="color: #ffffff; font-family: Zilla Slab, serif;"
-                            href="mailto:enquiry.atlantisbymittalgroup@gmail.com">enquiry.atlantisbymittalgroup@gmail.com</a>
+                            href="mailto:Info@themittalgroup.com">Info@themittalgroup.com</a>
                     </p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
 
                         <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                                class="fab fa-instagram"></i></a>
+                            href="https://www.facebook.com/share/1EqzvRcSyB/?mibextid=wwXIfr"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.instagram.com/themittalgroup/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -674,7 +575,7 @@
 
 
     <!-- WhatsApp Icon -->
-    <a href="https://wa.me/+918421699901" target="_blank"
+    <a href="https://wa.me/+919923833322" target="_blank"
         class="btn btn-success btn-lg d-flex align-items-center justify-content-center rounded-circle whatsapp-icon"
         style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; z-index: 1000;">
         <i class="bi bi-whatsapp" style="font-size: 20px;"></i>
@@ -702,6 +603,18 @@
     <script src="confirmation.js"></script>
 
 
+    <script>
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+
+    </script>
 
 
 </body>

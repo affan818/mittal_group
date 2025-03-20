@@ -32,7 +32,58 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Zilla Slab", serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        .hero-section {
+            position: relative;
+            background: url('./img/banner-06.jpg') center/cover no-repeat;
+            height: 60vh;
+            /* Adjusted height */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /* Align content to the left */
+            color: white;
+            padding: 50px;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            /* Dark overlay */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            /* text-align: left; */
+            /* Align text to the left */
+            width: 100%;
+            /* max-width: 50%; */
+            /* Prevents text from stretching too much */
+            /* padding-left: 50px; */
+            /* Space from the left */
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,11 +105,11 @@
                 <div class="h-100 d-inline-flex align-items-center py-2 me-3">
                     <a class="text-body text-white px-2" href="tel:+919923833322"><i
                             class="fa fa-phone-alt text-white me-2"></i> <span class="text-white">
-                            +91 9923833322
+                            +91 99238 33322
                         </span></a>
-                    <a class="text-body px-2" href="mailto:enquiry.atlantisbymittalgroup@gmail.com"><i
+                    <a class="text-body px-2" href="mailto:Info@themittalgroup.com"><i
                             class="fa fa-envelope-open text-white me-2"></i><span
-                            class="text-white">info@gmail.com.com</span></a>
+                            class="text-white">Info@themittalgroup.com</span></a>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -68,13 +119,12 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <a class="btn btn-sm-square btn-outline-body me-1"
-                        href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
-                            class="fab fa-twitter"></i></a>
+                        href="https://www.facebook.com/share/1EqzvRcSyB/?mibextid=wwXIfr"><i
+                            class="fab fa-facebook-f"></i></a>
+
 
                     <a class="btn btn-sm-square btn-outline-body me-0"
-                        href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                            class="fab fa-instagram"></i></a>
+                        href="https://www.instagram.com/themittalgroup/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -83,11 +133,10 @@
 
 
     <!-- Navbar Start -->
-    <nav style="background-color: rgb(222, 220, 220);"
-        class="navbar navbar-expand-lg navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="m-0" style="color: black;"><img class="me-3" src="img/icons/icon-1.png" width="50"
-                    alt="Icon">Mittal Group
+            <h1 class="m-0" style="color: black;font-family: Zilla Slab, serif"><img class="me-3"
+                    src="img/icons/icon-1.png" width="50" alt="Icon">Mittal Group
             </h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -103,69 +152,28 @@
                 <!-- <a href="./career.html" class="nav-item nav-link">Career</a> -->
 
 
-                <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
+                <a href="./contact.html" class="btn btn-dark py-2 px-4 ">
+                    Get in touch
+                </a>
             </div>
-            <a href="#" class="btn btn-dark py-2 px-4 d-none d-lg-block" data-bs-toggle="modal"
-                data-bs-target="#appointmentModal">
-                Get in touch
-            </a>
-        </div>
     </nav>
 
-    <!-- Modal -->
-    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="appointmentModalLabel">Get in touch</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="appointmentForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="user_name"
-                                placeholder="Enter your name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="user_email"
-                                placeholder="Enter your email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label><br>
-                            <input type="tel" class="form-control" id="phone" name="user_mobile"
-                                placeholder="phone number" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="city" class="form-label">City</label>
-                            <input type="text" class="form-control" id="city" name="user_city"
-                                placeholder="Enter your city" required>
-                        </div>
-                        <div class=" mb-3">
-                            <label for="country" class="form-label">Country</label>
-                            <input type="text" class="form-control" id="country" name="user_country"
-                                placeholder="Enter your Country" required>
-                        </div>
-                        <button type="submit" class="btn btn-dark w-100 mb-2">Submit</button>
-                        <div class="thankyou"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
     <!-- Navbar End -->
 
 
+
     <!-- Page Header Start -->
-    <div class="container-fluid page-header img-fluid py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <h1 class="display-1 text-white animated slideInDown">Terms & Conditions</h1>
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-5 fw-bold text-white animated slideInDown" style="font-family: Zilla Slab, serif;">Terms
+                &
+                Conditions</h1>
         </div>
-    </div>
+    </section>
 
     <!-- Page Header End -->
 
@@ -175,7 +183,7 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-                    <h4 class="section-title">Our Terms & Conditions</h4>
+                    <h4 class="section-title" style="font-family: Zilla Slab, serif">Our Terms & Conditions</h4>
                     <p class="mb-4">The present content on the website(s), including but not limited to pictures,
                         renderings of projects, images, copy, and other items, collectively referred to as "Website
                         Content" are purely indicative in nature, and are an artist’s conception and are NOT actual
@@ -247,7 +255,7 @@
                         provide any furniture, items, electronic goods amenities, accessories etc. as displayed in the
                         pictures.
                     </p>
-                    <h3>Disclaimer</h3>
+                    <h3 style="font-family: Zilla Slab, serif">Disclaimer</h3>
                     <ol class="g">
                         <li class="mb-2">
                             The brochure is for the easy presentation of the project. It should not be considered as a
@@ -293,24 +301,23 @@
                             style="color: #ffffff;"></i>222, EAST
                         WARDHAMAN
                         NAGAR
-                        BEHIND STATE BANK OF INDIA NAGPUR, NAGPUR, Nagpur, Maharashtra, 440008</p>
+                        BEHIND STATE BANK OF INDIA NAGPUR, Maharashtra, 440008</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: #ffffff;"></i><a
-                            class="white-underline" href="tel:918421699901" style="color:#ffffff;">+91
-                            8421699901</a>
+                            class="white-underline" href="tel:919923833322" style="color:#ffffff;">+91
+                            99238 33322</a>
                     </p>
                     <p class="mb-2"><i class="fa fa-envelope  me-3" style="color: #ffffff;"></i><a
                             class="white-underline" style="color: #ffffff; font-family: Zilla Slab, serif;"
-                            href="mailto:enquiry.atlantisbymittalgroup@gmail.com">enquiry.atlantisbymittalgroup@gmail.com</a>
+                            href="mailto:Info@themittalgroup.com">Info@themittalgroup.com</a>
                     </p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
 
                         <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                                class="fab fa-instagram"></i></a>
+                            href="https://www.facebook.com/share/1EqzvRcSyB/?mibextid=wwXIfr"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.instagram.com/themittalgroup/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">

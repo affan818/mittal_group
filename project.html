@@ -43,27 +43,25 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="project.css">
     <style>
         * {
-            font-family: "Zilla Slab", "serif"
+            font-family: "Zilla Slab", serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         .hero-section {
             position: relative;
-            background: url('./img/previous-project/previous-project.png') center/cover no-repeat;
+            background: url('./img/banner-1.jpg') center/cover no-repeat;
             height: 60vh;
             /* Adjusted height */
             display: flex;
             align-items: center;
-            /* Center vertically */
             justify-content: flex-start;
-            /* Align text to the left */
+            /* Align content to the left */
             color: white;
-            text-align: left;
-            /* Align text to the left */
             padding: 50px;
-            /* Add padding for spacing */
         }
 
         .hero-overlay {
@@ -72,15 +70,29 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            /* background: rgba(0, 0, 0, 0.5); */
             /* Dark overlay */
         }
 
         .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 50%;
-            /* Optional: Limit text width */
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            /* text-align: left; */
+            /* Align text to the left */
+            width: 100%;
+            /* max-width: 50%; */
+            /* Prevents text from stretching too much */
+            /* padding-left: 50px; */
+            /* Space from the left */
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0;
         }
     </style>
 </head>
@@ -104,11 +116,11 @@
                 <div class="h-100 d-inline-flex align-items-center py-2 me-3">
                     <a class="text-body text-white px-2" href="tel:+919923833322"><i
                             class="fa fa-phone-alt text-white me-2"></i> <span class="text-white">
-                            +91 9923833322
+                            +91 99238 33322
                         </span></a>
-                    <a class="text-body px-2" href="mailto:enquiry.atlantisbymittalgroup@gmail.com"><i
+                    <a class="text-body px-2" href="mailto:Info@themittalgroup.com"><i
                             class="fa fa-envelope-open text-white me-2"></i><span
-                            class="text-white">info@gmail.com.com</span></a>
+                            class="text-white">Info@themittalgroup.com</span></a>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -118,13 +130,12 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <a class="btn btn-sm-square btn-outline-body me-1"
-                        href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
-                            class="fab fa-twitter"></i></a>
+                        href="https://www.facebook.com/share/1EqzvRcSyB/?mibextid=wwXIfr"><i
+                            class="fab fa-facebook-f"></i></a>
+
 
                     <a class="btn btn-sm-square btn-outline-body me-0"
-                        href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                            class="fab fa-instagram"></i></a>
+                        href="https://www.instagram.com/themittalgroup/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -133,8 +144,7 @@
 
 
     <!-- Navbar Start -->
-    <nav style="background-color: rgb(222, 220, 220);"
-        class="navbar navbar-expand-lg navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
             <h1 class="m-0" style="color: black; font-family: Zilla Slab, serif">
                 <img class="me-3" src="img/icons/icon-1.png" width="50" alt="Icon">Mittal Group
@@ -150,22 +160,36 @@
                 <a href="./project.html" class="nav-item nav-link active">Our Projects</a>
                 <a href="./blogs.html" class="nav-item nav-link">Blogs</a>
                 <!--<a href="./career.html" class="nav-item nav-link">Career</a>-->
-                <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
+                <a href="./contact.html" class="btn btn-dark py-2 px-4 ">
+                    Get in touch
+                </a>
             </div>
-            <a href="#" class="btn btn-dark py-2 px-4 d-none d-lg-block" data-bs-toggle="modal"
-                data-bs-target="#appointmentModal">
-                Get in touch
-            </a>
-        </div>
     </nav>
 
-    <!-- Modal -->
+
+
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-5 fw-bold text-white animated slideInDown" style="font-family: Zilla Slab, serif;">Our
+                Projects</h1>
+        </div>
+    </section>
+
+    <!-- Page Header End -->
+
+    <!-- Project Start -->
+
     <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="appointmentModalLabel" style="font-family: Zilla Slab, serif">Get in
+                    <h5 style="font-family: Zilla Slab, serif;" class="modal-title" id="appointmentModalLabel">Get in
                         touch</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -183,10 +207,10 @@
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label><br>
-                            <input type="tel" class="form-control" id="phone" name="user_mobile"
+                            <input type="text" class="form-control" id="phone" name="user_mobile"
                                 placeholder="phone number" required>
                         </div>
-                        <div class="mb-3">
+                        <div class=" mb-3">
                             <label for="city" class="form-label">City</label>
                             <input type="text" class="form-control" id="city" name="user_city"
                                 placeholder="Enter your city" required>
@@ -204,25 +228,10 @@
         </div>
     </div>
 
-    <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <section class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="display-5 fw-bold text-white" style="font-family: Zilla Slab, serif;">Project</h1>
-        </div>
-    </section>
-
-    <!-- Page Header End -->
-
-    <!-- Project Start -->
     <div class="container-xxl project py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 600px;">
-                <h1 class="mb-4" style="font-family: Zilla Slab, serif">Mittal Group Builders & Developers Building
-                    Trust, One Landmark at a Time!</h1>
+                <h1 class="mb-4" style="font-family: Zilla Slab, serif">Building trust, Shaping legacies</h1>
             </div>
 
             <!-- Projects -->
@@ -230,7 +239,7 @@
                 <!-- Project 1 -->
                 <div class="col-lg-6 col-md-12">
                     <div class="position-relative h-100">
-                        <img class="img-fluid w-100 h-100 rounded" src="img/atlantis-3.jpg"
+                        <img class="img-fluid w-100 h-100 rounded" src="img/previous-project/atlantis-night-view .png"
                             style="object-fit: cover; cursor: pointer;" alt="Atlantis" data-bs-toggle="modal"
                             data-bs-target="#modal1">
                     </div>
@@ -238,14 +247,21 @@
                 <div class="col-lg-6 col-md-12">
                     <h1 class="mb-3" style="font-family: Zilla Slab, serif">Atlantis by the Mittal Group : Roman
                         Inspired Project</h1>
-                    <p class="mb-4">With our exceptional blend of expertise, innovation, and commitment, we continue to
-                        redefine the real estate landscape, creating spaces that inspire, elevate, and last.</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Nagpur's Finest Luxury Apartments</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>3 & 4 BED Sky Living Spaces</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Tallest building of the city</p>
+                    <p class="mb-4">A mesmerising landmark that redefines the skyline, impossible to overlook, a
+                        testament to unrivalled beauty & grandeur.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Roman Classical Architecture
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>3&4 Bed Sky Living Spaces</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>100+ Amenities with Basement & Stack Parking</p>
+                    <p><i class="fa fa-check text-dark me-3"></i> Green building concept for sustainable future</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Infinity Pool @ 215 Ft. Height
+                    </p>
                     <a href="https://atlantisbymittalgroup.com/" class="btn btn-dark py-3 px-5 mt-3">Read More</a>
                     <br>
-                    <a href="brouchers/Atlantis-Brochure.pdf">
+
+
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        data-pdf="./brouchers/Atlantis-Brochure.pdf">
                         <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
                             Brochure</button>
                     </a>
@@ -255,7 +271,8 @@
                 <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content position-relative">
-                            <img src="img/atlantis-3.jpg" class="img-fluid rounded" alt="Atlantis">
+                            <img src="img/previous-project/atlantis-night-view .png" class="img-fluid rounded"
+                                alt="Atlantis">
                             <button type="button"
                                 class="btn-close position-absolute top-0 end-0 m-4 bg-white rounded-circle p-2 shadow"
                                 data-bs-dismiss="modal" aria-label="Close"></button>
@@ -275,15 +292,30 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <h1 class="mb-3" style="font-family: Zilla Slab, serif">Lotus: A Tranquil Haven in the Heart of the
-                        City</h1>
-                    <p class="mb-4">Lotus offers a serene living experience with its lush green surroundings and modern
-                        amenities. Perfectly designed for families, it balances tranquility and connectivity, ensuring a
-                        peaceful yet vibrant lifestyle.</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Premium 2 & 3 BHK apartments with spacious layouts</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Landscaped gardens and walking trails</p>
+                    <h1 class="mb-3" style="font-family: Zilla Slab, serif">Lotus:A Tranquil Haven in the Heart of the
+                        City
 
-                    <a href="brouchers/lotus.pdf">
+                    </h1>
+                    <p class="mb-4">The Lotus Project by Mittal Group is a perfect blend of tranquility, grandeur, and
+                        modern living, offering you an exceptional lifestyle. With a prime location and world-class
+                        amenities, it’s not just a home; it’s your dream destination.
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Premium 1 & 2 BHK apartments with spacious layouts
+
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Vitrified flooring for all rooms </p>
+
+                    <p><i class="fa fa-check text-dark me-3"></i>Earthquake-resistant RCC frame structure for enhanced
+                        safety</p>
+
+                    <p><i class="fa fa-check text-dark me-3"></i>Designer doors in all rooms
+
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Adequate concealed electric fitting with modular
+                        switches
+                    </p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        data-pdf="./brouchers/lotus.pdf">
                         <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
                             Brochure</button>
                     </a>
@@ -313,16 +345,29 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <h1 class="mb-3" style="font-family: Zilla Slab, serif">Tulip: Affordable Elegance for Modern Living
+
                     </h1>
                     <p class="mb-4">Tulip redefines affordable housing by offering stylish and functional homes at
                         competitive prices. It is an ideal choice for young professionals and families looking for
-                        quality living spaces without compromising on comfort.</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Compact and thoughtfully designed 1 & 2 BHK apartments
-                    </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Energy-efficient designs with natural ventilation</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Community spaces, including a gym and party hall</p>
+                        quality living spaces without compromising on comfort.
 
-                    <a href="brouchers/tulip.pdf">
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Compact and thoughtfully designed 2 BHK apartments
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Earthquake-resistant RCC frame structure for enhanced
+                        safety
+                        safety</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Adequate concealed electric fitting with modular
+                        switches
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Decorative laminated door for all rooms
+                    </p>
+
+                    <p><i class="fa fa-check text-dark me-3"></i>Vitrified tiles with Italian finish
+                    </p>
+
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        data-pdf="./brouchers/tulip.pdf">
                         <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
                             Brochure</button>
                     </a>
@@ -358,7 +403,15 @@
                     <p class="mb-4">Orchid Project offers a perfect blend of modern architecture and superior
                         craftsmanship. Designed for exclusivity, each floor features a single apartment with excellent
                         ventilation and natural light. With high-end specifications and Vastu compliance, it ensures a
-                        peaceful and luxurious living experience.</p>
+                        peaceful and luxurious living experience</p>
+
+
+
+
+
+
+                    <p><i class="fa fa-check text-dark me-3"></i>Spacious 3BHK Apartments
+                    </p>
                     <p><i class="fa fa-check text-dark me-3"></i>Earthquake-resistant RCC frame structure for enhanced
                         safety
                     </p>
@@ -366,15 +419,15 @@
                     </p>
                     <p><i class="fa fa-check text-dark me-3"></i>Italian-finish vitrified tiles for a premium flooring
                         experience
+
                     </p>
                     <p><i class="fa fa-check text-dark me-3"></i>Rainwater harvesting system for sustainable water
                         management
 
                     </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Video-door phone security for all apartments
-                    </p>
 
-                    <a href="brouchers/orchid.pdf">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        data-pdf="./brouchers/orchid.pdf">
                         <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
                             Brochure</button>
                     </a>
@@ -394,7 +447,7 @@
             </div>
 
             <!-- project 5  -->
-            <div class="row g-4 wow fadeInUp pb-5" data-wow-delay="0.5s">
+            <div class="row g-4 wow fadeInUp pb-5 d-flex flex-column-reverse flex-lg-row" data-wow-delay="0.5s">
                 <div class="col-lg-6 col-md-12">
                     <div class="position-relative h-100">
                         <img class="img-fluid w-100 h-100 rounded" src="img/previous-project/mittal-enclave.jpg"
@@ -402,32 +455,32 @@
                             data-bs-target="#modal5">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
                     <h1 class="mb-3" style="font-family: Zilla Slab, serif">
-                        Mittal Enclave
-                        : Affordable Comfort with Timeless Design & Durability
+                        Mittal Enclave: Homes Full of Life, Trust, Happiness & Values.
                     </h1>
-                    <p class="mb-4">Mittal Enclave stands as a symbol of classic design and enduring quality. The RCC
-                        frame structure combined with teak wood doors and windows ensures a strong foundation and a
-                        luxurious feel. With well-defined spaces and modern amenities, this project offers unmatched
-                        value and comfort for its residents.</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>RCC frame structure with Redbricks work for durability
-                    </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Teak wood door frames and decorative front doors for a
-                        premium look
-                    </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Granite top kitchen with glazed tiled dado and
-                        stainless steel sink
-                    </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>European or Orissa pans with white washbasins in all
-                        toilets
-
-                    </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Utility water from Boring and drinking water from the
-                        corporation
+                    <p class="mb-4">Mittal Enclave symbolizes classic design and enduring quality. Its RCC frame
+                        structure and teak wood doors and windows ensure a strong foundation and a luxurious feel. With
+                        well-defined spaces and modern amenities, this project offers unmatched value and comfort for
+                        its residents.
                     </p>
 
-                    <a href="brouchers/mittal-enclave.pdf">
+
+
+
+
+
+                    <p><i class="fa fa-check text-dark me-3"></i>Spacious 48 row houses
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i> R.C.C. Frame structure with Redbricks work.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>
+                        Vitrified tiled flooring to all rooms floor. I.P.S. flooring on the terrace.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i> Granite Top Kitchen otta up to 2'.00". Glazed tiled
+                        dado with stainless steel sink.</p>
+                    <p><i class="fa fa-check text-dark me-3"></i>Frames made of Teak Wood </p>
+
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        data-pdf="./brouchers/mittal-enclave.pdf">
                         <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
                             Brochure</button>
                     </a>
@@ -445,12 +498,14 @@
                     </div>
                 </div>
             </div>
+
             <!-- project 6  -->
             <div class="row g-4 wow fadeInUp pb-5" data-wow-delay="0.5s">
                 <div class="col-lg-6 col-md-12">
                     <div class="position-relative h-100">
-                        <img class="img-fluid w-100 h-100 rounded" src="#" style="object-fit: cover; cursor: pointer;"
-                            alt="Skyline" data-bs-toggle="modal" data-bs-target="#modal6">
+                        <img class="img-fluid w-100 h-100 rounded" src="img/skyline.png"
+                            style="object-fit: cover; cursor: pointer;" alt="Skyline" data-bs-toggle="modal"
+                            data-bs-target="#modal6">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -460,27 +515,24 @@
                     </h1>
                     <p class="mb-4">The Skyline Project in Nagpur offers panoramic views and unmatched luxury in every
                         corner. Designed to enhance urban living, it combines cutting-edge architecture with premium
-                        amenities to create a one-of-a-kind residential experience.</p>
-                    <p><i class="fa fa-check text-dark me-3"></i>3 & 4 BHK apartments with floor-to-ceiling windows
-                    </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Rooftop amenities including a sky garden and infinity
-                        pool
+                        amenities to create a one-of-a-kind residential experience.
 
                     </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>High-tech gymnasium and wellness center
+                    <p><i class="fa fa-check text-dark me-3"></i>Only 2 Apartments on Each Floor
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>12 Apartments In All.
+                    </p>
+                    <p><i class="fa fa-check text-dark me-3"></i>3 & 4 BHK from 2500 sq. ft. To 3500 sq. ft.
 
                     </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Sustainable energy solutions and rainwater harvesting
-
-
+                    <p><i class="fa fa-check text-dark me-3"></i>Fully And Richly Furnished Interior Design For Each
+                        Apartment.
                     </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Utility water from Boring and drinking water from the
-                        corporation
-                    </p>
-                    <p><i class="fa fa-check text-dark me-3"></i>Located near key business and entertainment hubs
+                    <p><i class="fa fa-check text-dark me-3"></i>2 Duplexes on the 6th floor.
                     </p>
 
-                    <a href="brouchers/skyline.pdf">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                        data-pdf="./brouchers/skyline.pdf">
                         <button class="btn btn-dark py-3 px-5 mt-3"><i class="fa fa-download px-2"></i>Download
                             Brochure</button>
                     </a>
@@ -516,24 +568,23 @@
                             style="color: #ffffff;"></i>222, EAST
                         WARDHAMAN
                         NAGAR
-                        BEHIND STATE BANK OF INDIA NAGPUR, NAGPUR, Nagpur, Maharashtra, 440008</p>
+                        BEHIND STATE BANK OF INDIA NAGPUR, Maharashtra, 440008</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: #ffffff;"></i><a
-                            class="white-underline" href="tel:918421699901" style="color:#ffffff;">+91
-                            8421699901</a>
+                            class="white-underline" href="tel:919923833322" style="color:#ffffff;">+91
+                            99238 33322</a>
                     </p>
                     <p class="mb-2"><i class="fa fa-envelope  me-3" style="color: #ffffff;"></i><a
                             class="white-underline" style="color: #ffffff; font-family: Zilla Slab, serif;"
-                            href="mailto:enquiry.atlantisbymittalgroup@gmail.com">enquiry.atlantisbymittalgroup@gmail.com</a>
+                            href="mailto:Info@themittalgroup.com">Info@themittalgroup.com</a>
                     </p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-body me-1" href="https://x.com/mittalbuilders"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.facebook.com/MittalBuilders/"><i class="fab fa-facebook-f"></i></a>
 
                         <a class="btn btn-square btn-outline-body me-1"
-                            href="https://www.instagram.com/mittalbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                                class="fab fa-instagram"></i></a>
+                            href="https://www.facebook.com/share/1EqzvRcSyB/?mibextid=wwXIfr"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <a class="btn btn-square btn-outline-body me-1"
+                            href="https://www.instagram.com/themittalgroup/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">

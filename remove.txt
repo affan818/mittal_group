@@ -1,0 +1,275 @@
+ <!-- Facts Start -->
+    <div class="container-xxl py-5">
+        <div class="container pt-5">
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                        <div class="fact-icon">
+                            <i class="bi bi-building" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 style="font-family: Zilla Slab, serif;" class="mb-3">Design Approach</h3>
+                        <p style="font-family: Zilla Slab, serif;" class="mb-0">Where creativity meets functionality,
+                            delivering designs that are as unique as
+                            they are purposeful.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                        <div class="fact-icon">
+                            <i class="bi bi-wrench" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 style="font-family: Zilla Slab, serif;" class="mb-3">Innovative Solutions</h3>
+                        <p style="font-family: Zilla Slab, serif;" class="mb-0"> Redefining possibilities with
+                            cutting-edge solutions tailored to your vision
+                            and needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-5">
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                        <div class="fact-icon">
+                            <i class="bi bi-truck" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 style="font-family: Zilla Slab, serif;" class="mb-3">Coal Trading</h3>
+                        <p style="font-family: Zilla Slab, serif;" class="mb-0">Powering industries with trust and
+                            reliability, delivering high-quality coal solutions one shipment at a time.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                        <div class="fact-icon">
+                            <i class="bi bi-cash-stack" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 style="font-family: Zilla Slab, serif;" class="mb-3">Finance</h3>
+                        <p style="font-family: Zilla Slab, serif;" class="mb-0"> Fueling growth with smart financial
+                            solutions, building a secure future for tomorrow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+     <!-- Project Start -->
+    <div class="container-xxl project py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <!-- <h4 class="section-title">Our Projects</h4> -->
+                <h1 style="font-family: Zilla Slab, serif;" class=" mb-4">Mittal Group - Building Legacies
+                </h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <!-- <div class="col-lg-4">
+                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h3 class="m-0">01. Modern Complex</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h3 class="m-0">02. Royal Hotel</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h3 class="m-0">03. Mexwel Buiding</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <h3 class="m-0">04. Shopping Complex</h3>
+                        </button>
+                    </div>
+                </div> -->
+                <div class="col-lg-12">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-lg-6 col-md-12" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/atlantis-5.jpg"
+                                            style="object-fit: cover;" alt="Atlantis">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <h1 style="font-family: Zilla Slab, serif;" class="mb-3">Atlantis by the Mittal
+                                        Group : Roman inspired project</h1>
+                                    <p class="mb-4">With our exceptional blend of expertise, innovation, and commitment,
+                                        we continue to redefine the real estate landscape, creating spaces that inspire,
+                                        elevate, and last.</p>
+                                    <p><i class="fa fa-check text-dark me-3"></i>Roman Classical Architecture</p>
+                                    <p><i class="fa fa-check text-dark me-3"></i>3&4 Bed Sky Living Spaces</p>
+                                    <p><i class="fa fa-check text-dark me-3"></i>100+ Amenities</p>
+                                    <a href="https://atlantisbymittalgroup.com/"
+                                        class="btn btn-dark py-3 px-5 mt-3">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+    modal here 
+
+ <!-- Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 style="font-family: Zilla Slab, serif;" class="modal-title" id="appointmentModalLabel">Get in
+                        touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="user_name"
+                                placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="user_email"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label><br>
+                            <input type="tel" class="form-control" id="phone" name="user_mobile"
+                                placeholder="phone number" required>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" name="user_city"
+                                placeholder="Enter your city" required>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" class="form-control" id="country" name="user_country"
+                                placeholder="Enter your Country" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 mb-2">Submit</button>
+                        <div class="thankyou"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    modal 
+
+    why choose us //
+
+     <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 style="font-family: Zilla Slab, serif;" class="section-title">Why Choose Us!</h4>
+                    <h1 style="font-family: Zilla Slab, serif;" class="display-5 mb-4">What Makes Us an Industry Leader?
+                    </h1>
+                    <p class="mb-4">The Mittal Group exists to generate enduring worth through its coal trading
+                        activities and estate development operations. We have accomplished decades of exceptional
+                        quality service in coal trading and real estate businesses because our model relies on
+                        innovative solutions coupled with superior standards and faith from our customers.
+
+
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-trophy text-dark" style="font-size: 5rem;"></i>
+                                <div class="ms-4">
+                                    <h3 style="font-family: Zilla Slab, serif;">Unmatched Expertise</h3>
+                                    <p class="mb-0">Our team delivers dependable energy solutions and superior real
+                                        estate developments because of their deep expertise in coal trading and real
+                                        estate development, promoting industrial growth.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-palette text-dark" style="font-size: 5rem;"></i>
+                                <div class="ms-4">
+                                    <h3 style="font-family: Zilla Slab, serif;">Seamless Energy Solutions
+                                    </h3>
+                                    <p class="mb-0">We maintain our position as a trusted coal trading company that
+                                        supplies superior coal at competitive prices to fulfill evolving business energy
+                                        requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-star text-dark" style="font-size: 5rem;"></i>
+                                <div class="ms-4">
+                                    <h3 style="font-family: Zilla Slab, serif;">Building for the Future</h3>
+                                    <p class="mb-0">Our real estate development approach combines creative architectural
+                                        design with practical spaces, including homes alongside workplaces, which
+                                        transform how people live and do business in urban areas.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-cloud-sun text-dark" style="font-size: 5rem;"></i>
+
+                                <div class="ms-4">
+                                    <h3 style="font-family: Zilla Slab, serif;">Commitment to Quality
+                                    </h3>
+                                    <p class="mb-0">The company operates under industry-leading standards for coal
+                                        trading and real estate construction, always delivering unmatched quality.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-tree text-dark"" style=" font-size: 5rem;"></i>
+
+                                <div class="ms-4">
+                                    <h3 style="font-family: Zilla Slab, serif;">Sustainability & Responsibility</h3>
+                                    <p class="mb-0"> Eco-friendly practices form a core principle throughout our
+                                        operations as we leverage sustainable solutions that deliver value for business
+                                        organizations and local communities.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-people text-dark" style="font-size: 5rem;"></i>
+
+                                <div class="ms-4">
+                                    <h3 style="font-family: Zilla Slab, serif;">Customer-Centric Approach</h3>
+                                    <p class="mb-0"> Mittal Group's core focus rests with its customers, who remain the
+                                        center of its operations. Our company delivers specialized solutions, quick
+                                        delivery times, and financial assistance to help organizations and individual
+                                        clients succeed.
+                                        <br>Mittal Group maintains its position as an organization committed to trust
+                                        and excellence, which drives industrial activities, community development, and
+                                        sustainable future advancement.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp custom-background" data-wow-delay="0.5s">
+
+                    <img class="img-fluid" width="1080" src="img/atlantis-3.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->

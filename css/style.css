@@ -613,3 +613,31 @@ h6,
 ol.g {
   list-style-type: decimal-leading-zero;
 }
+
+/* Sticky Navbar Animation */
+.navbar {
+  transition: all 0.4s ease-in-out;
+  z-index: 999;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  /* Change background color when sticky */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Add shadow effect */
+  animation: slideDown 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
